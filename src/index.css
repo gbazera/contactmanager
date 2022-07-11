@@ -128,4 +128,36 @@ nav{
 	top: 0;
 	left: 0;
 	background-color: rgba(0, 0, 0, .75);
+	z-index: 0;
+}
+
+.panel{
+	padding: 20px;
+	background-color: var(--fg);
+	position: absolute;
+	z-index: 1;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	top: 50%;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+.panel .top{
+	display: flex;
+	justify-content: space-between;
+}
+
+.panel .title,
+.panel .close{
+	font-size: 18px;
+	font-weight: bold;
+	color: var(--txt);
+}
+
+.panel .close{
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
 }
